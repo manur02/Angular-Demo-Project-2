@@ -1,0 +1,32 @@
+<html ng-app="CakeSlideApp">
+
+<head>
+    <title>Angular Project 2</title>
+
+    <!--Angular js-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!--Javascript-->
+    <script type="text/javascript" src="app.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body ng-controller="PhotoController">
+    <h1>Baked with love by Hima Shah</h1>
+    <hr>
+    <h3>Customised Cakes</h3>
+    <table>
+        <tr>
+            <td><button class="btn btn-danger" ng-click="previous();">Pervious</button></td>
+            <td>
+                <img class="big" src="{{photos[photosCount]}}"></td>
+            <td><button class=" btn btn-success " ng-click="next();">Next</button></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
